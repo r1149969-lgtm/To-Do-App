@@ -115,3 +115,42 @@ This programs helped me understand how to create,access,modify, and manipulate s
 
 ## Author 
 Kavya R
+
+
+## To-Do App
+# Features 
+- Add a new task
+- View all tasks
+- Delete a task
+- Exit the application
+
+  ## Technologies Used
+  - Python 3
+
+  ## Concepts Used
+  - Lists
+  - Loops
+  - Conditional Statment
+    (if-elif-else)
+  - User Input
+  - Functions (Coming Soon)
+  - File Hndling (Coming Soon)
+ 
+  ## How to Run
+  1. clone this repository.
+  2. 2. Open the project in VS Code.
+  3. Run the Python file:'''bash python to-do .py
+
+
+  ## Future Improvements
+  - Add Functions
+  - File Handling
+  - Edit Task
+  - Mark Task as Completed
+ 
+
+  ## Learning Outcome
+  This project helped me understand Python lists,loops,conditional statments,user input, and menu-driven programming.
+
+  ## Author
+  Kavya R
