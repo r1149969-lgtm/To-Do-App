@@ -51,6 +51,21 @@ Each function performs a specific task, making the program easier to understand,
 Kavya R
 
 
+## File Handling
+Used to store tasks permanntly in a file.
+Reads saved tasks when the application starts.
+Saves updated tasks after adding or deleting a task.
+
+## Functions
+load_tasks()
+Loads all tasks from the file.
+Save_tasks()
+saves the updated task list to the file.
+
+
+## Author
+Kavya R
+
 
 
 
