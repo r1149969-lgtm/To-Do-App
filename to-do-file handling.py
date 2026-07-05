@@ -1,8 +1,8 @@
 def load_tasks():
     try:
         with open("tasks.txt","r") as file:
-             return
-        file.read().splitlines()
+            return file.read().splitlines()
+        
     except FileNotFoundError:
      return []
 
