@@ -1,50 +1,6 @@
-def load_tasks():
-    try:
-        with open("tasks.txt","r") as file:
-             return
-        file.read().splitlines()
-    except FileNotFoundError:
-     return []
-
-def save_tasks(tasks):
-    with open("tasks.txt", "w") as file:
-     for task in tasks:
-       file.write(task + "\n")
 
 
-tasks = load_tasks()
-
-def add_task():
-    task = input("Enter a task:")
-    tasks.append(task)
-    save_tasks(tasks)
-    print("Task added successfully!")
-    
-def view_tasks():
-    if len(tasks) == 0:
-        print("No tasks available.")
-    else:
-        print("\nYour Tasks:")
-        for i in range(len(tasks)):
-            print(f"{i + 1}. {tasks[i]}")
-
-def delete_task():
-    if len(tasks) == 0:
-        print("No task available.")
-    else:
-        print("\nYour Tasks:")
-        for i in range(len(tasks)):
-            print(f"{i+1}.{tasks[i]}")
-    delete = int(input("Enter task number to delete:"))
-    if delete >= 1 and delete <= len(tasks):
-        removed = tasks.pop(delete - 1)
-        save_tasks(tasks)
-        print(f"{removed} deleted successfully!")
-    else:
-        print("Invalid task number.") 
-
-
-
+tasks = []
 
 while True:
 
@@ -55,13 +11,40 @@ while True:
     print("4.Exit")
 
     choice = input("Enter your choise: ")
+
     if choice == "1":
-       add_task()
+       
+       task = input("Enter a task: ")
+       tasks.append(task)
+       
     elif choice == "2":
-        view_tasks()
+
+        if len (tasks)==0:
+            print("No task available.")
+        else:
+            print("\n Your Tasks: ")
+            for i in range(len(tasks)):
+                print(f"{i+1}.{tasks[i]}")
+        
     elif choice == "3":
-        delete_task() 
+        if len(tasks)==0:
+            print("No tasks available.")
+        else:
+            print("\n Your Tasks:")
+            for i in range(len(tasks)):
+                print(f"{i + 1 }.{tasks[i]}")
+            Delete = int(input ("Enter task number to delete :"))
+        if Delete >= 1 & Delete <= len(tasks):
+            removed=tasks.pop(Delete-1)
+            print(f"{removed} deleted successfully!")
+        else:
+            print("Invalid task number.")
+        
+        
+        
+
     elif choice == "4":
+       
        print("Thank you! Goodbye.")
        break
 else:
