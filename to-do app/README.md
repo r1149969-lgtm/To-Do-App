@@ -35,3 +35,24 @@ run the python file:
 Kavya R
 
 
+## Functions
+This project uses Python functions to organize the code into small and manageable parts.
+Each function performs a specific task, making the program easier to understand,test,and maintain.
+
+## Functions in this Project
+- add_task()
+- view_task()
+- detele_task()
+- save_task()
+- load_task()
+
+
+## Author 
+Kavya R
+
+
+
+
+
+
+
